@@ -1,2 +1,0 @@
-# VacationResort
-vacation resort demo

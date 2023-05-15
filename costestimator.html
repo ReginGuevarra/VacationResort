@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Booking</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!--CSS Styling-->
+    <link rel="stylesheet" type="text/css" href="costestimator.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="homepage.html">Palawan, El Nido Resorts</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resorts</a>
+                        </li>
+                        <li class="nav-item">
+                         <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                             data-bs-toggle="dropdown" aria-expanded="false">
+                             Menu
+                         </a>
+                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <li><a class="dropdown-item" href="costestimator.html" target="_blank">Book a room</a></li>
+                             <li><a class="dropdown-item" href="dining.html">Dining</a></li>
+                             <li><a class="dropdown-item" href="#">Car rental</a></li>
+                             <li><a class="dropdown-item" href="#">Activities</a></li>
+                             <li><a class="dropdown-item" href="#">Event calendar</a></li>
+                         </ul>
+                     </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form action="" id="costForm">
+                <h1>Cost Estimator </h1>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name...">
+                <input type="text" id="email" class="form-control" placeholder="Enter your email...">
+
+                Checkin date:
+                <input type="date" name="checkindate" class="form-control" id="checkin">
+                Days
+                <input type="number" id="days" class="form-control" min="1" max="28">
+                Number of adults
+                <input type="number" id="adults" class="form-control" min="1" max="4">
+                Number of children
+                <input type="number" id="children" class="form-control" min="0" max="4">
+
+                <fieldset>
+                    <input type="radio" id="roomtype1" name="roomtype" value="Queen">Queen
+                    <input type="radio" id="roomtype2" name="roomtype" value="King">King
+                    <input type="radio" id="roomtype3" name="roomtype" value="2bed">2-bedroom Suite
+                </fieldset>
+
+                <h3> Discount options:</h2>
+                    <fieldset>
+                        <input type="radio" id="discount1" name="discount" value="None">None
+                        <input type="radio" id="discount2" name="discount" value="AA">AAA/ Senior
+                        <input type="radio" id="discount3" name="discount" value="Military">Military
+                    </fieldset>
+                    <button id="btnCalculate" onclick="calculateRoomPrice()">Calculate</button>
+
+                    Price incl. discount excl. taxes:
+                    <div id="demo">
+                        result
+                    </div>
+                    Price incl. taxes
+                    <div id="demo2">
+
+                    </div>
+
+                    <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+
+    <script src="scripts.js">
+        
+    </script>
+</body>
+
+</html>         

@@ -1,0 +1,23 @@
+    body {
+		background-image: url(https://seda-lio-el-nido.booked.net/data/Photos/OriginalPhoto/12837/1283772/1283772847/Seda-Lio-Hotel-El-Nido-Exterior.JPEG);
+        background-repeat: no-repeat;
+        background-size: cover;
+		font-family: 'Times New Roman', Times, serif;
+		color: rgb(255, 255, 255);
+	}
+    header {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    main {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgba(0, 0, 0, 0.681);
+        border-radius: 20px;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    footer {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }

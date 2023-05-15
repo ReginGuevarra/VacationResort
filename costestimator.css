@@ -1,0 +1,17 @@
+body {
+    background-image: url("https://media.cntraveler.com/photos/587e3e692dfd004f5ec03689/16:9/w_2560%2Cc_limit/Pool2-ElNidoResortsPangulasianIsland-Palawan-CRHotel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+}
+main {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+form {
+background-color: rgba(0, 0, 0, 0.681);
+border-radius: 20px;
+text-align: center;
+}
